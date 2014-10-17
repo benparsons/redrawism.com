@@ -1,0 +1,7 @@
+Redrawism focuses on two-components of art creation, and the way they work together, not in any order. The two
+components are:
+* doing, making a change. Could be making a brush stroke, adding a note, changing a colour, iterating an algorithm,
+soldering a piece
+* assessing the change according to a source. Assessing means to decide whether the change is closer to or further from
+an ideal, and to use that information to decide what the next doing step should be. The ideal can be an impression,
+a source image, a live view
