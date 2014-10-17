@@ -4,4 +4,15 @@ components are:
 soldering a piece
 * assessing the change according to a source. Assessing means to decide whether the change is closer to or further from
 an ideal, and to use that information to decide what the next doing step should be. The ideal can be an impression,
-a source image, a live view
+a source image, a live view, a feeling
+
+Draws attention to the process
+
+All creation fits this, with very few exceptions. Even seemingly unthinking creation has at least the one each of the
+components: first assessing the "zero" point (a blank canvas, an existing wall), then making a change. Even if the
+result is not assessed, we have performed both components.
+
+"genredraw" makes changes and then compares the result of those changes to a source, if dissatisfied it makes another
+change to revert. The criteria it uses to assess the "ideal" is pixel-similarity to a source image. The only criteria
+we have given the algorithm is a mathematical one which does not assume any sense of aesthetics. There is a large
+requirement for human intervention.
