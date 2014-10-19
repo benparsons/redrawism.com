@@ -9,33 +9,29 @@ scotchApp.config(function($routeProvider) {
 
         // route for the home page
         .when('/', {
-            templateUrl : 'pages/home.html',
+            templateUrl : 'pages/intro.html',
             controller  : 'mainController'
         })
 
-        // route for the about page
-        .when('/about', {
-            templateUrl : 'pages/about.html',
-            controller  : 'aboutController'
+        .when('/intro', {
+            templateUrl : 'pages/intro.html'
         })
 
-        // route for the contact page
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
+        .when('/gallery', {
+            templateUrl : 'pages/gallery.html'
+        })
+
+        .when('/realised', {
+            templateUrl : 'pages/realised.html'
+        })
+
+        .when('/redrawism', {
+            templateUrl : 'pages/redrawism.html'
         });
+
 });
 
 // create the controller and inject Angular's $scope
 scotchApp.controller('mainController', function($scope) {
     // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!';
-});
-
-scotchApp.controller('aboutController', function($scope) {
-    $scope.message = 'Look! I am an about page.';
-});
-
-scotchApp.controller('contactController', function($scope) {
-    $scope.message = 'Contact us! JK. This is just a demo.';
 });
