@@ -40,14 +40,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Redrawism</a>
+                <a class="navbar-brand" href="#" ng-click="selectedPage = 'intro'">Redrawism</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#intro">Intro</a></li>
-                    <li class="active"><a href="#redrawism">Redrawism</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#realised">Realised</a></li>
+                    <li ng-class="{active: selectedPage == 'intro'}"><a href="#intro" ng-click="selectedPage = 'intro'">Intro</a></li>
+                    <li ng-class="{active: selectedPage == 'redrawism'}"><a href="#redrawism" ng-click="selectedPage = 'redrawism'">Redrawism</a></li>
+                    <li ng-class="{active: selectedPage == 'gallery'}"><a href="#gallery" ng-click="selectedPage = 'gallery'">Gallery</a></li>
+                    <li ng-class="{active: selectedPage == 'realised'}"><a href="#realised" ng-click="selectedPage = 'realised'">Realised</a></li>
                     <li><a target="_blank" href="http://github.com/benparsons/genredraw">Code</a></li>
                     <li><a target="_blank" href="https://www.etsy.com/shop/Redrawism">Available</a></li>
                 </ul>
@@ -59,11 +59,8 @@
     </div>
     <ul>
         <li>Landing page - has carousel and very short intro text</li>
-        <li>Redrawism - text from manifesto</li>
         <li>Gallery - needs some way to have an "index" at the top with anchors</li>
         <li>Realised - photos of prints/t-shirt</li>
-        <li>Code - link to github</li>
-        <li>Link to Etsy</li>
     </ul>
 </div>
 </body>
