@@ -17,6 +17,34 @@ nav
 	border: 1px solid $color-grey-100
 	background: $color-grey-50
 
+	+respond-to-size(800px)
+		display: block !important
+		height: auto
+
+		h1
+			text-align: center
+			padding-top: $base-unit-layout !important
+			padding-bottom: $base-unit-layout !important
+
+		ul
+			border-top: 1px solid $color-grey-100
+
+			li
+				flex: 1
+				padding: $base-unit-layout 0
+				text-align: center
+
+				a
+					padding: 0 !important
+					justify-content: center
+
+	+respond-to-size(630px)
+		ul
+			display: block !important
+
+			li
+				border-left: 0 !important
+
 	h1
 		padding: 0 $base-unit-layout
 		margin: 0
@@ -50,6 +78,8 @@ nav
 					color: $color-primary-600
 
 #carousel
+	+border-radius(4px)
+
 	overflow: hidden
 	position: relative
 	height: rem(360px)
@@ -71,7 +101,6 @@ nav
 
 article
 	padding: $double-unit-layout $base-unit-layout
-	background: grey
 
 	p
 		line-height: 1.75
@@ -79,6 +108,16 @@ article
 			size: rem(18px)
 
 #mc_embed_signup
+	@extend .text-center
+
+	border-top: 1px solid $color-grey-100
+	border-bottom: 1px solid $color-grey-100
+	padding: $triple-unit-layout 0 $double-unit-layout // inputs have $base-unit-layout
+
+	h2
+		font:
+			size: rem(20px)
+			weight: 700
 
 footer
 	color: $color-grey-300
