@@ -1,11 +1,7 @@
 .sass-cache
-.idea/
+.idea
+
 /node_modules
-/temp
-
-/vendor/
-
-error_log
 
 .DS_Store
 .Spotlight-V100
