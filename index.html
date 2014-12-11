@@ -33,9 +33,9 @@
 
 <body ng-controller="mainController">
 
-	<nav class="container-narrow flex">
-		<h1>Re<strong>draw</strong>ism</h1>
-		<ul class="nav navbar-nav flex">
+	<nav class="container-narrow flex center-vertically">
+		<h1 class="text-uppercase">Re<strong>draw</strong>ism</h1>
+		<ul class="text-uppercase flex">
 			<li ng-class="{active: selectedPage == 'intro'}"><a href="#intro" ng-click="selectedPage = 'intro'">Intro</a></li>
 			<li ng-class="{active: selectedPage == 'redrawism'}"><a href="#redrawism" ng-click="selectedPage = 'redrawism'">Redrawism</a></li>
 			<li ng-class="{active: selectedPage == 'gallery'}"><a href="#gallery" ng-click="selectedPage = 'gallery'">Gallery</a></li>

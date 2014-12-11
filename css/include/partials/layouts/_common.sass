@@ -17,6 +17,38 @@ nav
 	border: 1px solid $color-grey-100
 	background: $color-grey-50
 
+	h1
+		padding: 0 $base-unit-layout
+		margin: 0
+		font:
+			size: rem(18px)
+
+	ul
+		height: 100%
+		margin: 0 0 0 auto
+		padding: 0
+		font:
+			size: rem(12px)
+
+		li
+			height: 100%
+			border-left: 1px solid $color-grey-100
+
+			a
+				position: relative // Line-height fix
+				top: 1px // Line-height fix
+				text-decoration: none
+				height: 100%
+				display: flex
+				align-items: center
+				padding: 0 $base-unit-layout
+
+			&.active
+				background: $color-grey-100
+
+				a
+					color: $color-primary-600
+
 footer
 	color: $color-grey-300
 	font-size: rem(12px)
