@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  ng-app="scotchApp">
+<html  ng-app="redrawismApp">
 <head lang="en">
 	<meta charset="UTF-8">
 	<title>Redrawism algorithmic art project</title>
@@ -8,7 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Oxygen:700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
 
 	<!-- litchi -->
 	<link href='/css/screen.css' rel='stylesheet' type='text/css'>
@@ -39,9 +39,9 @@
 			<h1 class="text-uppercase">Re<strong>draw</strong>ism</h1>
 		</a>
 		<ul class="text-uppercase flex">
-			<li ng-class="{active: selectedPage == 'intro'}"><a href="#intro" ng-click="selectedPage = 'intro'">Intro</a></li>
-			<li ng-class="{active: selectedPage == 'redrawism'}"><a href="#redrawism" ng-click="selectedPage = 'redrawism'">Redrawism</a></li>
-			<li ng-class="{active: selectedPage == 'gallery'}"><a href="#gallery" ng-click="selectedPage = 'gallery'">Gallery</a></li>
+			<li ng-class="{active: selectedPage == 'intro'}"><a href="/intro" ng-click="selectedPage = 'intro'">Intro</a></li>
+			<li ng-class="{active: selectedPage == 'redrawism'}"><a href="/redrawism" ng-click="selectedPage = 'redrawism'">Redrawism</a></li>
+			<li ng-class="{active: selectedPage == 'gallery'}"><a href="/gallery" ng-click="selectedPage = 'gallery'">Gallery</a></li>
 			<li><a target="_blank" href="http://github.com/benparsons/genredraw">Code</a></li>
 			<li><a target="_blank" href="https://www.etsy.com/shop/Redrawism">Available</a></li>
 		</ul>
