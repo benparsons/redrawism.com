@@ -1022,7 +1022,10 @@ nav {
       display: block !important; }
       nav ul li {
         border-left: 0 !important; } }
-  nav h1 {
+  nav a h1 {
+    color: #181e20;
+    text-decoration: none !important;
+    border-bottom: 0 !important;
     padding: 0 1rem;
     margin: 0;
     font-size: 1.125rem; }
@@ -1072,6 +1075,10 @@ nav {
 
 article {
   padding: 2rem 1rem; }
+  article img {
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto; }
   article p {
     line-height: 1.75;
     font-size: 1.125rem; }
