@@ -1,13 +1,14 @@
 $(document).ready(function() {
 
-	$("#carousel > .slide:gt(0)").hide();
+	$("#carousel > div:gt(1)").hide();
 
 	setInterval(function() {
-		$("#carousel > .slide:first")
+		$("#carousel > div:first-of-type")
 		.fadeOut(1000)
 		.next()
 		.fadeIn(1000)
 		.end()
 		.appendTo("#carousel");
 	},  7000);
+
 });

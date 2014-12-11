@@ -1026,12 +1026,20 @@ nav {
           color: #739500; }
 
 #carousel {
+  overflow: hidden;
   position: relative;
-  height: 200px; }
-  #carousel .slide {
+  height: 22.5rem; }
+  #carousel div {
     position: absolute;
+    z-index: 2;
     left: 0;
     top: 0; }
+    #carousel div:nth-of-type(2) {
+      z-index: 1; }
+    #carousel div img {
+      border-radius: 4px;
+      max-height: 22.5rem;
+      width: auto; }
 
 article {
   padding: 2rem 1rem;
