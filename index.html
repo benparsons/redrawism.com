@@ -35,7 +35,9 @@
 <body ng-controller="mainController">
 
 	<nav class="container-narrow flex center-vertically">
-		<h1 class="text-uppercase">Re<strong>draw</strong>ism</h1>
+		<a href="/">
+			<h1 class="text-uppercase">Re<strong>draw</strong>ism</h1>
+		</a>
 		<ul class="text-uppercase flex">
 			<li ng-class="{active: selectedPage == 'intro'}"><a href="#intro" ng-click="selectedPage = 'intro'">Intro</a></li>
 			<li ng-class="{active: selectedPage == 'redrawism'}"><a href="#redrawism" ng-click="selectedPage = 'redrawism'">Redrawism</a></li>
